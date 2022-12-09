@@ -49,3 +49,4 @@ console.log('Result018 - ' + limitStr('Каждый охотник желает 
 
 ---
 # [rs-school](https://rs.school/)
+![Logo rs schools.](rs_logo.jpg)
