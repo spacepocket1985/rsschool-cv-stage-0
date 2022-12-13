@@ -4,23 +4,151 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600&family=Work+Sans:wght@500;600&display=swap"
+        rel="stylesheet">
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CV#2-HTML, CSS and Git Basics</title>
-    <link rel="stylesheet" href="./style.css">
+    <title>CV Alex Klintsevich</title>
 </head>
 
 <body>
     <div class="container">
-        <!-- <div class="two-colums"> -->
         <div class="column-left">
-            <header>
-                <h2>ALEX-KLINTSEVICH</h2>
-                <img src="./ava.jpg" alt="avatar" width="200px">
+            <header class="header">
+                <img class="MyPhoto" src="./images/foto.jpg" alt="MyPhoto">
+                <h1>ALEX KLINTSEVICH</h1>
+                <h2>FRONTEND DEVELOPER</h2>
             </header>
-            <main> </main>
+            <main class="main">
+                <div class="separator"></div>
+                <section class="contacts">
+                    <h2>CONTACTS</h2>
+                    <nav class="nav">
+                        <ul>
+                            <li><img src="./images/phone.png" alt="PhoneIcon" width="40" height="40">
+                                <p>+375-29-XXXXXXXX</p>
+                            </li>
+                            <li><img src="./images/email.png" alt="MailIcon" width="40" height="40">
+                                <p>space1985pocket@gmail.com</p>
+                            </li>
+                            <li><img src="./images/discord.png" alt="DiscordIcon" width="40" height="40">
+                                <p>spacePocket</p>
+                            <li><img src="./images/home.png" alt="TelegramIcon" width="40" height="40">
+                                <p>Belarus, Grodno</p>
+                            </li>
+
+                        </ul>
+                    </nav>
+                </section>
+                <div class="separator"></div>
+                <section class="skills">
+                    <h2>SKILLS</h2>
+                    <ul>
+                        <li>HTML5, CSS3</li>
+                        <li>JavaScript Basics</li>
+                        <li>Adobe Photoshop</li>
+                        <li>Windows OS</li>
+                        <li>Git, GitHub</li>
+                    </ul>
+                </section>
+
+            </main>
         </div>
-        <div class="column-right"></div>
-        <footer></footer>
+        <div class="column-right">
+            <section class="ABOUT-MYSELF">
+                <div class="subtitle">
+                    <h2>ABOUT MYSELF</h2>
+                </div>
+                <div class="add-info"> I want to gain new knowledge and skills. The opportunity to become a front-end
+                    developer is a path of personal development. Anyway time goes fast and <blockquote
+                        class="my-blockquote">
+                        <p>when you think itвЂ™s too late, the truth is, itвЂ™s still early.</p>
+                    </blockquote>There must be changes in my life. Trying to find myself in the IT field is a new
+                    challenge for me. And I accept it. </div>
+            </section>
+            <section class="EDUCATION">
+                <div class="subtitle">
+                    <h2>EDUCATION</h2>
+                </div>
+                <div class="add-info"> <strong>Yanka Kupala State University of Grodno</strong>
+                    <br>Physics and Technology Faculty
+                    <br><strong>Years: </strong>2003 - 2008
+                    <br><strong>Specialization:</strong> information and measuring equipment
+                </div>
+            </section>
+            <section class="COURSES">
+                <div class="subtitle">
+                    <h2>COURSES</h2>
+                </div>
+                <div class="add-info">
+                    <ul>
+                        <li> <a href="https://itgid.info/" target="_blank"> HTML for JavaScript Developersl </a></li>
+                        <li> <a href="https://k-asap.com/ru" target="_blank">Kaspersky Automated Security Awareness
+                                Platform</a> </li>
+                        <li>RS Schools В«JavaScript/Front-end. Stage 0В»</li>
+                    </ul>
+                </div>
+            </section>
+            <section class="PROJECTS">
+                <div class="subtitle">
+                    <h2>PROJECTS</h2>
+                </div>
+                <div class="add-info">
+                    <ul>
+                        <li> <a href="https://spacepocket1985.github.io/rsschool-cv/cv" target="_blank"> CV1. Markdown
+                                & Git</a></li>
+                        <li> <a href="https://spacepocket1985.github.io/rsschool-cv/" target="_blank">CV2. HTML, CSS &
+                                Git Basics</a> </li>
+                    </ul>
+                </div>
+            </section>
+            <section class="LANGUAGES">
+                <div class="subtitle">
+                    <h2>LANGUAGES</h2>
+                </div>
+                <div class="add-info">
+                    <ul>
+                        <li>Belorussian - native speaker.</li>
+                        <li>Russian - speak fluently.</li>
+                        <li>English - B1, Intermediate. <a href="https://str.by/" target="_blank">[STREAMLINE]</a> </li>
+                        <li>Polish - basic knowledge.</li>
+                    </ul>
+                </div>
+            </section>
+            <section class="CODE-EXAMPLE">
+                <div class="subtitle">
+                    <h2>CODE EXAMPLE</h2>
+                </div>
+                <div class="add-info">
+                    <code>let limitStr = (str, n, symb) =>
+                        (str.length > n) ? (symb) ? (str.slice(0, n) + symb) : ((str.slice(0, n) + '...')) : (str);
+                    </code>
+                </div>
+            </section>
+            <section class="ADDITIONAL-INFORMATION">
+                <div class="subtitle">
+                    <h2>ADDITIONAL INFORMATION</h2>
+                </div>
+                <div class="add-info">
+                    <blockquote class="my-blockquote">If you type "google" into Google, you can break the internet.
+                    </blockquote>
+                </div>
+            </section>
+        </div>
+
+
+        <footer class="footer">
+            <div class="my-git"><a href="https://github.com/spacepocket1985" target="_blank"><img
+                        src="./images/git-pic.png" alt="github logo" height="40"></a></div>
+            <div class="date-created">2022</div>
+            <div class="rs"><a href="https://rs.school/" target="_blank"><img src="./images/rs.png" alt="rs_school"
+                        height="40"></a></div>
+
+        </footer>
     </div>
 
 </body>
