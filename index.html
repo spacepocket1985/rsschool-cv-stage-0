@@ -18,8 +18,16 @@
 <body>
     <div class="container">
         <div class="column-left">
+            <nav class="cv-nav">
+                <ul>
+                    <li><a href="#about">ABOUT</a> </li>
+                    <li><a href="#education">EDUCATION</a></li>
+                    <li><a href="#courses">COURSES</a></li>
+                    <li><a href="#code">CODE</a></li>
+                </ul>
+            </nav>
             <header class="header">
-                <img class="MyPhoto" src="./images/foto.jpg" alt="MyPhoto">
+                <img class="my-photo" src="./images/foto.jpg" alt="my-photo">
                 <h1>ALEX KLINTSEVICH</h1>
                 <h2>FRONTEND DEVELOPER</h2>
             </header>
@@ -59,18 +67,18 @@
             </main>
         </div>
         <div class="column-right">
-            <section class="ABOUT-MYSELF">
+            <section id="about">
                 <div class="subtitle">
                     <h2>ABOUT MYSELF</h2>
                 </div>
                 <div class="add-info"> I want to gain new knowledge and skills. The opportunity to become a front-end
                     developer is a path of personal development. Anyway time goes fast and <blockquote
                         class="my-blockquote">
-                        <p>when you think itвЂ™s too late, the truth is, itвЂ™s still early.</p>
+                        <p>when you think it’s too late, the truth is, it’s still early.</p>
                     </blockquote>There must be changes in my life. Trying to find myself in the IT field is a new
                     challenge for me. And I accept it. </div>
             </section>
-            <section class="EDUCATION">
+            <section id="education">
                 <div class="subtitle">
                     <h2>EDUCATION</h2>
                 </div>
@@ -80,7 +88,7 @@
                     <br><strong>Specialization:</strong> information and measuring equipment
                 </div>
             </section>
-            <section class="COURSES">
+            <section id="courses">
                 <div class="subtitle">
                     <h2>COURSES</h2>
                 </div>
@@ -89,11 +97,11 @@
                         <li> <a href="https://itgid.info/" target="_blank"> HTML for JavaScript Developersl </a></li>
                         <li> <a href="https://k-asap.com/ru" target="_blank">Kaspersky Automated Security Awareness
                                 Platform</a> </li>
-                        <li>RS Schools В«JavaScript/Front-end. Stage 0В»</li>
+                        <li>RS Schools «JavaScript/Front-end. Stage 0»</li>
                     </ul>
                 </div>
             </section>
-            <section class="PROJECTS">
+            <section class="projects">
                 <div class="subtitle">
                     <h2>PROJECTS</h2>
                 </div>
@@ -106,7 +114,7 @@
                     </ul>
                 </div>
             </section>
-            <section class="LANGUAGES">
+            <section class="languages">
                 <div class="subtitle">
                     <h2>LANGUAGES</h2>
                 </div>
@@ -119,17 +127,18 @@
                     </ul>
                 </div>
             </section>
-            <section class="CODE-EXAMPLE">
+            <section id="code" class="code-example">
                 <div class="subtitle">
                     <h2>CODE EXAMPLE</h2>
                 </div>
                 <div class="add-info">
                     <code>let limitStr = (str, n, symb) =>
                         (str.length > n) ? (symb) ? (str.slice(0, n) + symb) : ((str.slice(0, n) + '...')) : (str);
+                        console.log('Result - ' + limitStr('I'm not a window cleaner, I work with Windows!.', 16)) 
                     </code>
                 </div>
             </section>
-            <section class="ADDITIONAL-INFORMATION">
+            <section class="additional-information">
                 <div class="subtitle">
                     <h2>ADDITIONAL INFORMATION</h2>
                 </div>
@@ -152,5 +161,7 @@
     </div>
 
 </body>
+
+
 
 </html>
