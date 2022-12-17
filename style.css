@@ -3,8 +3,13 @@
     padding: 0;
 }
 
+
 html {
     scroll-behavior: smooth;
+}
+
+ul {
+    list-style: square;
 }
 
 .container {
@@ -16,7 +21,6 @@ html {
     display: flex;
     flex-wrap: wrap;
 }
-
 
 .column-left {
     width: 30%;
@@ -46,6 +50,10 @@ html {
     background-color: #da7400;
 }
 
+.nav a {
+    color: #000;
+}
+
 .header {
     background-color: #da7400;
 }
@@ -68,6 +76,11 @@ html {
     font-size: larger;
     font-weight: lighter;
 
+}
+section a:hover,
+section a:focus,
+section a:active {
+    color: #914f05;
 }
 
 .my-photo {
@@ -94,8 +107,6 @@ html {
 .main h3 {
     font-family: 'Montserrat', sans-serif;
 }
-
-
 
 .main ul {
     list-style: disc;
@@ -125,7 +136,11 @@ html {
 
 .skills ul {
     padding-left: 30px;
+    list-style: square;
+     
 }
+
+
 
 .separator {
     height: 20px;
@@ -188,6 +203,7 @@ html {
 
 a {
     color: #da7400;
+    text-decoration: none;
 }
 
 .footer {
@@ -225,11 +241,13 @@ a {
 
     .column-left .my-photo {
 
-        display: block;
+        
         margin: auto;
         padding: 5px;
-        max-width: 50%;
-        border-radius: 100px;
+        max-width: 97%;
+        text-align: center;
+        
+       
     }
 
     .column-right {
