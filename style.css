@@ -1,6 +1,8 @@
 * {
     margin: 0;
     padding: 0;
+
+    box-sizing: border-box;
 }
 
 
@@ -10,6 +12,11 @@ html {
 
 ul {
     list-style: square;
+}
+
+a {
+    color: #da7400;
+    text-decoration: none;
 }
 
 .container {
@@ -28,25 +35,25 @@ ul {
 
 }
 
-.cv-nav ul {
+.cv-nav-list {
     display: flex;
     justify-content: flex-start;
     list-style: none;
     text-align: center;
 }
 
-.cv-nav ul li {
+.cv-nav-item {
     padding: 5px 4px;
     font-size: 15px;
 }
 
 .cv-nav a {
     text-decoration: none;
-    color: black;
+    color: #000;
     padding: 0;
 }
 
-.cv-nav li:hover {
+.cv-nav-item:hover {
     background-color: #da7400;
 }
 
@@ -72,18 +79,19 @@ ul {
     padding-bottom: 5px;
     background-color: #da7400;
     padding-left: 15px;
-    color: white;
+    color: #fff;
     font-size: larger;
     font-weight: lighter;
 
 }
+
 section a:hover,
 section a:focus,
 section a:active {
     color: #914f05;
 }
 
-.my-photo {
+.header-my-photo {
 
     display: block;
     max-width: 100%;
@@ -108,39 +116,36 @@ section a:active {
     font-family: 'Montserrat', sans-serif;
 }
 
-.main ul {
-    list-style: disc;
+.contacts-list {
+    list-style: none;
     padding-left: 10px;
     padding-top: 10px;
 }
 
-.contacts ul {
-    list-style: none;
 
-}
-
-.main li {
+.contact-list-item {
     padding-bottom: 10px;
 
 }
 
-.contacts li img {
+.contact-list-item img {
     margin-right: 10px;
     vertical-align: middle;
 }
 
-.contacts li p {
+.contact-list-item p {
     display: inline;
     vertical-align: middle;
 }
 
-.skills ul {
+.skills-list {
     padding-left: 30px;
     list-style: square;
-     
 }
 
-
+.skills-list-item {
+    padding-top: 10px;
+}
 
 .separator {
     height: 20px;
@@ -201,10 +206,7 @@ section a:active {
     font-style: italic;
 }
 
-a {
-    color: #da7400;
-    text-decoration: none;
-}
+
 
 .footer {
     width: 100%;
@@ -239,15 +241,15 @@ a {
         order: 1;
     }
 
-    .column-left .my-photo {
+    .column-left .header-my-photo {
 
-        
+
         margin: auto;
         padding: 5px;
         max-width: 97%;
         text-align: center;
-        
-       
+
+
     }
 
     .column-right {
