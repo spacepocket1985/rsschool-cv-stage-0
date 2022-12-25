@@ -38,6 +38,8 @@ a {
     justify-content: flex-start;
     list-style: none;
     text-align: center;
+    background-color: #dfdfdf;
+    
 }
 
 .cv-nav-item {
