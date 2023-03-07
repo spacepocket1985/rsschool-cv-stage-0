@@ -33,6 +33,7 @@ console.log('Result018 - ' + limitStr('Каждый охотник желает 
 * **Yanka Kupala State University of Grodno**
  * Physics and Technology Faculty
 
+* [RS School JavaScript/Front-end. Stage 0] (https://rs.school/js-stage0/)
 * [HTML for JavaScript Developersl](https://itgid.info/course/html)
 * [Kaspersky Automated Security Awareness Platform](https://k-asap.com/ru/)
 
