@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/owfont-regular.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="shortcut icon" href="./assets/favicon.ico" type="image/x-icon">
+    <title>momentum-2023</title>
+</head>
+
+<body>
+    <!-- header start -->
+    <header class="header">
+        <div class="left__side-wrapper audio__block">
+            <div class="player">
+                <div class="player__controls">
+                    <button class="play__prev player__icon"></button>
+                    <button class="play player__icon"></button>
+                    <button class="play__next player__icon"></button>
+                    <button class="sound__on player__icon sound"></button>
+                </div>
+                <div class="player__controls-advance">
+                    <div class="volume__level-title">volume level</div>
+                    <input type="range" id="sound-control" min="0" max="1" step="0.01">
+                    <div class="track_name"></div>
+                    <input type="range" id="progress-bar" min="0" max="" value="0" />
+                    <div class="track__time-container">
+                        <div class="current__time"></div>
+                        <div class="duration__time"></div>
+                    </div>
+                </div>
+            </div>
+            <ul class="play__list"></ul>
+        </div>
+        </div>
+        <div class="lang lang__block">
+            <div class="lang__en lang__box lang__active">En</div>
+            <div class="lang__ru lang__box">Ru</div>
+        </div>
+        <div class="right__side-wrapper">
+            <div class="weather weather__block">
+                <input type="text" class="city" />
+                <i class="weather-icon owf"></i>
+                <div class="weather-error"></div>
+                <div class="description-container">
+                    <span class="temperature"></span>
+                    <span class="weather-description"></span>
+                </div>
+                <div class="wind"></div>
+                <div class="humidity"></div>
+            </div>
+
+        </div>
+    </header>
+    <!-- header end -->
+
+    <!-- main start -->
+    <main class="main">
+        <div class="main__wrapper">
+            <div class="slider__icons">
+                <button class="slide__prev slider__icon"></button>
+                <button class="slide__next slider__icon"></button>
+
+            </div>
+            <div class="main__date-time-wrapper"> <time class="time time__block"></time>
+                <date class="date date__block">date</date>
+            </div>
+
+            <div class="greeting__container greeting__block">
+                <span class="greeting"></span>
+                <input type="text" class="greeting__name">
+            </div>
+
+        </div>
+        <div class="main__settings">
+            <div class="main__settings_wrapper">
+                <div class="title__background-source">Background source</div>
+                <button class="button__github button__api api__select">GitHub</button>
+                <button class="button__unsplash button__api">Unsplash</button>
+                <button class="button__flick button__api">Flick</button>
+                <h4 class="h4__title-tag title__tag">Input img tag:</h4>
+                <input class="img__tags" type="text" id="tags__api">
+                <!-- <select class="img__tags" name="tags" id="tags__api">
+                    <option value="nature">nature</option>
+                    <option value="dogs">dogs</option>
+                    <option value="cars">cars</option>
+                    <option value="time">time</option>
+                </select> -->
+                <h4 class="title__dispaly-hide">Display/hide blocks</h4>
+                <div class="dispaly-hide-wrapper">
+                    <div class="dispaly-hide-block">
+                        <h4 class="title__dispaly-hide-block title__greeting">Greeting</h4>
+                        <button class="button__dispaly-hide button__greeting" data-filter="greeting__block"></button>
+                    </div>
+                    <div class="dispaly-hide-block">
+                        <h4 class="title__dispaly-hide-block title__weather">Weather</h4>
+                        <button class="button__dispaly-hide button__weather" data-filter="weather__block"></button>
+                    </div>
+                    <div class="dispaly-hide-block audio">
+                        <h4 class="title__dispaly-hide-block title__audio">Audio</h4>
+                        <button class="button__dispaly-hide button__audio" data-filter="audio__block"></button>
+                    </div>
+                    <div class="dispaly-hide-block">
+                        <h4 class="title__dispaly-hide-block title__time">Time</h4>
+                        <button class="button__dispaly-hide button__time" data-filter="time__block"></button>
+                    </div>
+                    <div class="dispaly-hide-block">
+                        <h4 class="title__dispaly-hide-block title__date">Date</h4>
+                        <button class="button__dispaly-hide button__date" data-filter="date__block"></button>
+                    </div>
+                    <div class="dispaly-hide-block">
+                        <h4 class="title__dispaly-hide-block title__quote">Quote</h4>
+                        <button class="button__dispaly-hide button__quote" data-filter="quote__block"></button>
+                    </div>
+                    <div class="dispaly-hide-block">
+                        <h4 class="title__dispaly-hide-block title__lang">Lang</h4>
+                        <button class="button__dispaly-hide button__lang" data-filter="lang__block"></button>
+                    </div>
+
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </main>
+
+    <!-- main end -->
+
+    <!-- footer start -->
+    <footer class="footer">
+
+        <div class="footer__flex">
+            <div class="footer__left-side">
+                <button class="button__settings"></button>
+                <button class="button__todo"></button>
+            </div>
+
+            <div class="footer__quotes-wraper quote__block">
+                <button class="change__quote"></button>
+                <div>
+                    <div class="quote"></div>
+                    <div class="author"></div>
+                </div>
+            </div>
+            <div class="footer__right-side">
+                <div class="todo__wrapper">
+                    <h3 class="hidden todo__title-h3">Список дел</h3>
+                    <ul class="todo__list">
+                    </ul>
+                    <form class="todo__add-form">
+                        <input class="todo__add-form-input" type="text" placeholder="For example, go outside" required>
+                        <button class="todo__add-form-button" type="submit">+</button>
+                    </form>
+                </div>
+            </div>
+
+        </div>
+        </div>
+
+    </footer>
+    <!-- footer end -->
+    <template id="todo-template">
+        <li class="todo__list-item">
+            <label class="todo__list-label">
+                <input class="todo__list-input" type="checkbox">
+                <span class="todo__span"></span>
+                <input class="todo__input-edit" type="text">
+                <div class="todo__list-item-buttons">
+                    <button class="todo__button-edit"></button><button class="todo__button-delete"></button>
+                </div>
+            </label>
+        </li>
+    </template>
+
+    <script type="module" src="./script/index.js"></script>
+
+</body>
+
+</html>
