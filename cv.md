@@ -33,7 +33,7 @@ console.log('Result018 - ' + limitStr('Каждый охотник желает 
 * **Yanka Kupala State University of Grodno**
  * Physics and Technology Faculty
 
-* [RS School JavaScript/Front-end. Stage 0](https://rs.school/js-stage0/)
+* [RS School JavaScript/Front-end Stage 0](https://rs.school/js-stage0/)
 * [HTML for JavaScript Developersl](https://itgid.info/course/html)
 * [Kaspersky Automated Security Awareness Platform](https://k-asap.com/ru/)
 
@@ -46,6 +46,7 @@ console.log('Result018 - ' + limitStr('Каждый охотник желает 
 
 ---
 ## Projects
+* [Plants task from Stage 0](https://rolling-scopes-school.github.io/spacepocket1985-JSFEPRESCHOOL2022Q4/plants/)
 * [CV - Markdown](https://spacepocket1985.github.io/rsschool-cv/cv)
 
 ---
